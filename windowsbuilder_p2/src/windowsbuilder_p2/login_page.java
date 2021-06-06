@@ -18,15 +18,19 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.awt.event.ActionEvent;
+import java.awt.Font;
+import javax.swing.SwingConstants;
 
 public class login_page {
 
-	JFrame frame;
+	static JFrame frame;
 	private JTextField id_input;
 	private JTextField pw_input;
 	private JLabel lblNewLabel_1;
 	static login_page window;
 	public static String student_id;
+	private JLabel lblNewLabel_2;
+	private JLabel lblNccu;
 	/**
 	 * Launch the application.
 	 */
@@ -55,33 +59,48 @@ public class login_page {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 750, 500);
+		frame.setTitle("系統登入頁面");
+		frame.getContentPane().setBackground(new Color(153, 204, 204));
+		frame.setBounds(150, 50, 800, 600);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("account");
-		lblNewLabel.setBounds(207, 142, 57, 19);
+		JLabel lblNewLabel = new JLabel("學號");
+		lblNewLabel.setForeground(Color.DARK_GRAY);
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setFont(new Font("微軟正黑體", Font.BOLD, 20));
+		lblNewLabel.setBounds(262, 252, 57, 19);
 		frame.getContentPane().add(lblNewLabel);
 		
-		JLabel lblPassword = new JLabel("password");
-		lblPassword.setBounds(207, 200, 57, 19);
+		JLabel lblPassword = new JLabel("密碼");
+		lblPassword.setForeground(Color.DARK_GRAY);
+		lblPassword.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPassword.setFont(new Font("微軟正黑體", Font.BOLD, 20));
+		lblPassword.setBounds(262, 305, 57, 19);
 		frame.getContentPane().add(lblPassword);
 		
 		id_input = new JTextField();
-		id_input.setBounds(278, 139, 192, 25);
+		id_input.setFont(new Font("微軟正黑體", Font.BOLD, 18));
+		id_input.setBounds(340, 246, 192, 25);
 		frame.getContentPane().add(id_input);
 		id_input.setColumns(10);
 		
 		pw_input = new JTextField();
+		pw_input.setFont(new Font("微軟正黑體", Font.BOLD, 18));
 		pw_input.setColumns(10);
-		pw_input.setBounds(278, 197, 192, 25);
+		pw_input.setBounds(340, 299, 192, 25);
 		frame.getContentPane().add(pw_input);
 		
 		lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setBounds(207, 268, 263, 19);
+		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_1.setFont(new Font("微軟正黑體", Font.BOLD, 20));
+		lblNewLabel_1.setBounds(262, 412, 287, 25);
 		frame.getContentPane().add(lblNewLabel_1);
 		
-		JButton btnNewButton = new JButton("sign in");
+		JButton btnNewButton = new JButton("登入");
+		btnNewButton.setForeground(Color.DARK_GRAY);
+		btnNewButton.setBackground(new Color(255, 153, 102));
+		btnNewButton.setFont(new Font("微軟正黑體", Font.BOLD, 20));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
@@ -89,11 +108,11 @@ public class login_page {
 					if(login_verify(id_input.getText().toString(),pw_input.getText().toString())) {
 						info newinfos = new info();
 						newinfos.frame.setVisible(true);
-						window.frame.setVisible(false);
+						login_page.frame.setVisible(false);
 						//window.frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
 					}
 					else {
-						lblNewLabel_1.setText("error : Invalid id or password");
+						lblNewLabel_1.setText("請輸入正確的學號和密碼");
 						lblNewLabel_1.setForeground(Color.RED);
 					}
 				} catch (ClassNotFoundException e1) {
@@ -103,8 +122,24 @@ public class login_page {
 				
 			}
 		});
-		btnNewButton.setBounds(207, 312, 263, 35);
+		btnNewButton.setBounds(262, 350, 280, 35);
 		frame.getContentPane().add(btnNewButton);
+		
+		lblNewLabel_2 = new JLabel("\u4F7F\u7528\u8005\u767B\u9304");
+		lblNewLabel_2.setForeground(Color.DARK_GRAY);
+		lblNewLabel_2.setBackground(new Color(255, 204, 204));
+		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_2.setFont(new Font("微軟正黑體", Font.BOLD, 24));
+		lblNewLabel_2.setBounds(252, 194, 280, 25);
+		frame.getContentPane().add(lblNewLabel_2);
+		
+		lblNccu = new JLabel("NCCU \u8AB2\u7A0B\u8A55\u8AD6\u7CFB\u7D71");
+		lblNccu.setForeground(Color.DARK_GRAY);
+		lblNccu.setBackground(new Color(255, 204, 204));
+		lblNccu.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNccu.setFont(new Font("微軟正黑體", Font.BOLD, 36));
+		lblNccu.setBounds(0, 68, 786, 90);
+		frame.getContentPane().add(lblNccu);
 		
 		
 	}
@@ -123,7 +158,6 @@ public class login_page {
 			ResultSet  dbpw_resultSet = statement.executeQuery(dbpw_selectSql);
 			while(dbpw_resultSet.next()) {
 				dbpw = dbpw_resultSet.getString("Password");
-				System.out.println(dbpw);
 			}
 			if(id.equals("")||pw.equals("")) {
 				return false;
