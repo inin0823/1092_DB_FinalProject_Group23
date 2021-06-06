@@ -317,7 +317,7 @@ public class point_page {
 				String[] tempdata = new String[20];
 				for (int ii = 1; ii < 7; ii++) {
 					System.out.println(resultSet.getString(ii));
-					tempdata[ii-1] = resultSet.getString(ii);
+					tempdata[ii-1] = resultSet.getString(ii).split("\\.")[0];
 				}
 				datas[i]=tempdata;
 				i++;

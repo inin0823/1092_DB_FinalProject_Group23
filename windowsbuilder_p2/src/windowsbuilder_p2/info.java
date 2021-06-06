@@ -359,20 +359,24 @@ public class info {
 			System.out.println("MSSQL Connection Success");
 			//enroll
 			Statement statement = connection.createStatement();
-			String table_selectSql = "SELECT Year_Semester,[FinalProject].[dbo].[ENROLL].Course_ID,CourseName,Class_Session,Credit,Teacher,Comment_Status FROM [FinalProject].[dbo].[ENROLL],[FinalProject].[dbo].[STUDENT],[FinalProject].[dbo].[COURSE] WHERE [FinalProject].[dbo].[ENROLL].Student_ID ="+login_page.getStudent_id();
+			String table_selectSql = "SELECT Year_Semester,[FinalProject].[dbo].[ENROLL].Course_ID,CourseName,Class_Session,Credit,Teacher,Comment_Status" + 
+					" FROM [FinalProject].[dbo].[ENROLL] " + 
+					" INNER JOIN [FinalProject].[dbo].[COURSE]" + 
+					" ON ENROLL.Course_ID = COURSE.Course_ID" + 
+					" WHERE [FinalProject].[dbo].[ENROLL].Student_ID = "+login_page.getStudent_id();
 			System.out.println(table_selectSql);
 	
 			ResultSet resultSet = statement.executeQuery(table_selectSql);
 			String[] columnNames = {"學期","課程編號","課程名稱","上課時間","學分數","授課教師","評論"};
-			String[][] datas = new String[25][25];
+			String[][] datas = new String[20][20];
 			int i = 0;
 			while (resultSet.next()) {
 				//System.out.println(resultSet.getString("Year_Semester") + "    " + resultSet.getString("Course_ID") + "   "+ resultSet.getString("CourseName") + "   " + resultSet.getString("Teacher")+ "   " + resultSet.getString("Lecture_Language"));
 				//System.out.println();
 				String[] tempdata = new String[20];
-				for (int ii = 1; ii < 8; ii++) {
+				for (int ii = 1; ii < 8; ii++) {			
 					System.out.println(resultSet.getString(ii));
-					tempdata[ii-1] = resultSet.getString(ii);
+					tempdata[ii-1] = resultSet.getString(ii).replace(" ","");
 				}
 				if (tempdata[6].equals("填寫")) {
 					tempdata[6] = "修改";

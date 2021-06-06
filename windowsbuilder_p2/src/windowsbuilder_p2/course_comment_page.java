@@ -57,6 +57,7 @@ public class course_comment_page extends JFrame{
 				try {
 					window = new course_comment_page();
 					window.frame.setVisible(true);
+
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -173,7 +174,7 @@ public class course_comment_page extends JFrame{
 		panel.setLayout(null);
 		
 		JLabel label_Year_Semester = new JLabel("\u4FEE\u8AB2\u5B78\u671F");
-		label_Year_Semester.setBounds(22, 22, 91, 23);
+		label_Year_Semester.setBounds(10, 22, 91, 23);
 		panel.add(label_Year_Semester);
 		label_Year_Semester.setBackground(new Color(102, 153, 204));
 		label_Year_Semester.setHorizontalAlignment(SwingConstants.CENTER);
@@ -182,7 +183,7 @@ public class course_comment_page extends JFrame{
 		label_Year_Semester.setAlignmentX(0.5f);
 		
 		JLabel label_Course_ID = new JLabel("\u8AB2\u7A0B\u7DE8\u865F");
-		label_Course_ID.setBounds(22, 66, 91, 23);
+		label_Course_ID.setBounds(10, 66, 91, 23);
 		panel.add(label_Course_ID);
 		label_Course_ID.setBackground(new Color(102, 153, 204));
 		label_Course_ID.setHorizontalAlignment(SwingConstants.CENTER);
@@ -191,7 +192,7 @@ public class course_comment_page extends JFrame{
 		label_Course_ID.setAlignmentX(0.5f);
 		
 		JLabel label_CourseName = new JLabel("\u8AB2\u7A0B\u540D\u7A31");
-		label_CourseName.setBounds(22, 107, 91, 23);
+		label_CourseName.setBounds(10, 107, 91, 23);
 		panel.add(label_CourseName);
 		label_CourseName.setBackground(new Color(102, 153, 204));
 		label_CourseName.setHorizontalAlignment(SwingConstants.CENTER);
@@ -200,7 +201,7 @@ public class course_comment_page extends JFrame{
 		label_CourseName.setAlignmentX(0.5f);
 		
 		JLabel label_Class_Session = new JLabel("\u4E0A\u8AB2\u6642\u9593");
-		label_Class_Session.setBounds(243, 22, 85, 23);
+		label_Class_Session.setBounds(233, 22, 85, 23);
 		panel.add(label_Class_Session);
 		label_Class_Session.setBackground(new Color(102, 153, 204));
 		label_Class_Session.setHorizontalAlignment(SwingConstants.CENTER);
@@ -209,7 +210,7 @@ public class course_comment_page extends JFrame{
 		label_Class_Session.setAlignmentX(0.5f);
 		
 		JLabel label_Credit = new JLabel("\u8AB2\u7A0B\u5B78\u5206");
-		label_Credit.setBounds(243, 66, 85, 23);
+		label_Credit.setBounds(233, 66, 85, 23);
 		panel.add(label_Credit);
 		label_Credit.setBackground(new Color(102, 153, 204));
 		label_Credit.setHorizontalAlignment(SwingConstants.CENTER);
@@ -218,7 +219,7 @@ public class course_comment_page extends JFrame{
 		label_Credit.setAlignmentX(0.5f);
 		
 		JLabel label_Teacher = new JLabel("\u6388\u8AB2\u6559\u5E2B");
-		label_Teacher.setBounds(243, 107, 85, 23);
+		label_Teacher.setBounds(233, 107, 85, 23);
 		panel.add(label_Teacher);
 		label_Teacher.setBackground(new Color(102, 153, 204));
 		label_Teacher.setHorizontalAlignment(SwingConstants.CENTER);
@@ -232,7 +233,7 @@ public class course_comment_page extends JFrame{
 		label_Year_Semester_1.setFont(new Font("微軟正黑體", Font.BOLD, 16));
 		label_Year_Semester_1.setBackground(new Color(102, 153, 204));
 		label_Year_Semester_1.setAlignmentX(0.5f);
-		label_Year_Semester_1.setBounds(125, 22, 91, 23);
+		label_Year_Semester_1.setBounds(100, 22, 126, 23);
 		panel.add(label_Year_Semester_1);
 		
 		label_Course_ID_1 = new JLabel("");
@@ -241,7 +242,7 @@ public class course_comment_page extends JFrame{
 		label_Course_ID_1.setFont(new Font("微軟正黑體", Font.BOLD, 16));
 		label_Course_ID_1.setBackground(new Color(102, 153, 204));
 		label_Course_ID_1.setAlignmentX(0.5f);
-		label_Course_ID_1.setBounds(123, 66, 91, 23);
+		label_Course_ID_1.setBounds(98, 66, 128, 23);
 		panel.add(label_Course_ID_1);
 		
 		label_CourseName_1 = new JLabel("");
@@ -250,7 +251,7 @@ public class course_comment_page extends JFrame{
 		label_CourseName_1.setFont(new Font("微軟正黑體", Font.BOLD, 16));
 		label_CourseName_1.setBackground(new Color(102, 153, 204));
 		label_CourseName_1.setAlignmentX(0.5f);
-		label_CourseName_1.setBounds(125, 107, 91, 23);
+		label_CourseName_1.setBounds(100, 107, 126, 23);
 		panel.add(label_CourseName_1);
 		
 		label_Class_Session_1 = new JLabel("");
@@ -259,7 +260,7 @@ public class course_comment_page extends JFrame{
 		label_Class_Session_1.setFont(new Font("微軟正黑體", Font.BOLD, 16));
 		label_Class_Session_1.setBackground(new Color(102, 153, 204));
 		label_Class_Session_1.setAlignmentX(0.5f);
-		label_Class_Session_1.setBounds(349, 22, 85, 23);
+		label_Class_Session_1.setBounds(316, 22, 139, 23);
 		panel.add(label_Class_Session_1);
 		
 		label_Credit_1 = new JLabel("");
@@ -268,7 +269,7 @@ public class course_comment_page extends JFrame{
 		label_Credit_1.setFont(new Font("微軟正黑體", Font.BOLD, 16));
 		label_Credit_1.setBackground(new Color(102, 153, 204));
 		label_Credit_1.setAlignmentX(0.5f);
-		label_Credit_1.setBounds(349, 66, 85, 23);
+		label_Credit_1.setBounds(316, 66, 139, 23);
 		panel.add(label_Credit_1);
 		
 		label_Teacher_1 = new JLabel("");
@@ -277,7 +278,7 @@ public class course_comment_page extends JFrame{
 		label_Teacher_1.setFont(new Font("微軟正黑體", Font.BOLD, 16));
 		label_Teacher_1.setBackground(new Color(102, 153, 204));
 		label_Teacher_1.setAlignmentX(0.5f);
-		label_Teacher_1.setBounds(349, 107, 85, 23);
+		label_Teacher_1.setBounds(316, 107, 139, 23);
 		panel.add(label_Teacher_1);
 		
 		JLabel label_Recommended_Rate_1_1 = new JLabel("\u8AB2\u7A0B\u8A55\u8AD6");
@@ -350,13 +351,17 @@ public class course_comment_page extends JFrame{
 			System.out.println("MSSQL Connection Success");
 			
 			Statement statement = connection.createStatement();
-			String course_info_selectSql = "SELECT Year_Semester,[FinalProject].[dbo].[ENROLL].Course_ID,CourseName,Class_Session,Credit,Teacher FROM [FinalProject].[dbo].[ENROLL],[FinalProject].[dbo].[STUDENT],[FinalProject].[dbo].[COURSE] WHERE [FinalProject].[dbo].[ENROLL].Student_ID ="+login_page.getStudent_id()+" AND [FinalProject].[dbo].[ENROLL].Course_ID = "+comment_course_ID;
+			String course_info_selectSql = "SELECT Year_Semester,[FinalProject].[dbo].[ENROLL].Course_ID,CourseName,Class_Session,Credit,Teacher,Comment_Status" + 
+										  " FROM [FinalProject].[dbo].[ENROLL] " + 
+										  " INNER JOIN [FinalProject].[dbo].[COURSE]" + 
+										  " ON ENROLL.Course_ID = COURSE.Course_ID" + 
+										  " WHERE [FinalProject].[dbo].[ENROLL].Student_ID = "+login_page.getStudent_id()+" AND [FinalProject].[dbo].[ENROLL].Course_ID = "+comment_course_ID;
 			
 			ResultSet course_info_resultSet = statement.executeQuery(course_info_selectSql);
 			JLabel [] course_info_label = {label_Year_Semester_1,label_Course_ID_1,label_CourseName_1,label_Class_Session_1,label_Credit_1,label_Teacher_1};
 			while (course_info_resultSet.next()) {
 				for (int a =1;a<7;a++) {
-					course_info_label[a-1].setText(course_info_resultSet.getString(a));
+					course_info_label[a-1].setText(course_info_resultSet.getString(a).replace(" ",""));
 				}				
 			}
 			
@@ -416,7 +421,7 @@ public class course_comment_page extends JFrame{
 			comment_insertSql.setString(8,comboBox_Sweetness.getSelectedItem().toString());	
 			comment_insertSql.setString(9,comboBox_Loading.getSelectedItem().toString());
 			comment_insertSql.execute();
-			
+			System.out.println(comment_time.format(LocalDateTime.now()));
 			//comment status
 			String comment_status_updateSql = "UPDATE [FinalProject].[dbo].[ENROLL] SET Comment_Status = '填寫' WHERE Student_ID = "+login_page.getStudent_id()+" AND [FinalProject].[dbo].[ENROLL].Course_ID = "+comment_course_ID;
 			statement.executeUpdate(comment_status_updateSql);
