@@ -39,7 +39,7 @@ public class point_page {
 	public static JLabel label_student_id;
 	public static JLabel label_studentName;
 	public static JLabel label_major;
-	public static JLabel label_grade;
+	public static JLabel label_gender;
 	public static JLabel label_point;
 	static info window;
 
@@ -71,7 +71,7 @@ public class point_page {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setTitle("ÂI¼Æ¬ö¿ý¬d¸ß");
+		frame.setTitle("ï¿½Iï¿½Æ¬ï¿½ï¿½ï¿½ï¿½dï¿½ï¿½");
 		frame.getContentPane().setBackground(new Color(153, 204, 204));
 		frame.setBounds(150, 50, 800, 600);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -83,11 +83,11 @@ public class point_page {
 		topPane.setBackground(new Color(153, 204, 204));
         frame.getContentPane().add(topPane, BorderLayout.NORTH);
         		
-        				JButton back = new JButton("µn¥X");
+        				JButton back = new JButton("ï¿½nï¿½X");
         				back.setForeground(Color.DARK_GRAY);
         				back.setBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 153, 0), new Color(204, 204, 204)));
         				back.setBackground(new Color(255, 153, 102));
-        				back.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+        				back.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 16));
         				back.setAlignmentX(Component.CENTER_ALIGNMENT);
         				back.addActionListener(new ActionListener() {
         					public void actionPerformed(ActionEvent e) {
@@ -99,15 +99,15 @@ public class point_page {
         					
         				});
         		
-        		JLabel lblNewLabel = new JLabel("NCCU ½Òµ{µû½×¨t²Î");
+        		JLabel lblNewLabel = new JLabel("NCCU ï¿½Òµ{ï¿½ï¿½ï¿½×¨tï¿½ï¿½");
         		lblNewLabel.setForeground(Color.DARK_GRAY);
         		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-        		lblNewLabel.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 18));
+        		lblNewLabel.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 18));
         		
         		JLabel lblNewLabel_1 = new JLabel("\u9EDE\u6578\u8A18\u9304\u67E5\u8A62");
         		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
         		lblNewLabel_1.setForeground(Color.DARK_GRAY);
-        		lblNewLabel_1.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 18));
+        		lblNewLabel_1.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 18));
         		GroupLayout gl_topPane = new GroupLayout(topPane);
         		gl_topPane.setHorizontalGroup(
         			gl_topPane.createParallelGroup(Alignment.LEADING)
@@ -132,42 +132,42 @@ public class point_page {
         panel.setBackground(new Color(255, 102, 102));
         frame.getContentPane().add(panel, BorderLayout.WEST);
         
-        label_student_id = new JLabel("¾Ç¸¹");
+        label_student_id = new JLabel("ï¿½Ç¸ï¿½");
         label_student_id.setForeground(Color.DARK_GRAY);
         label_student_id.setAlignmentX(Component.CENTER_ALIGNMENT);
-        label_student_id.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+        label_student_id.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 16));
         label_student_id.setHorizontalAlignment(SwingConstants.CENTER);
         
-        label_major = new JLabel("¬ì¨t");
+        label_major = new JLabel("ï¿½ï¿½t");
         label_major.setForeground(Color.DARK_GRAY);
         label_major.setAlignmentX(Component.CENTER_ALIGNMENT);
         label_major.setHorizontalAlignment(SwingConstants.CENTER);
-        label_major.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+        label_major.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 16));
         
-        label_studentName = new JLabel("©m¦W");
+        label_studentName = new JLabel("ï¿½mï¿½W");
         label_studentName.setForeground(Color.DARK_GRAY);
         label_studentName.setAlignmentX(Component.CENTER_ALIGNMENT);
         label_studentName.setHorizontalAlignment(SwingConstants.CENTER);
-        label_studentName.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+        label_studentName.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 16));
         
-        label_grade = new JLabel("¦~¯Å");
-        label_grade.setForeground(Color.DARK_GRAY);
-        label_grade.setAlignmentX(Component.CENTER_ALIGNMENT);
-        label_grade.setHorizontalAlignment(SwingConstants.CENTER);
-        label_grade.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+        label_gender = new JLabel("ï¿½~ï¿½ï¿½");
+        label_gender.setForeground(Color.DARK_GRAY);
+        label_gender.setAlignmentX(Component.CENTER_ALIGNMENT);
+        label_gender.setHorizontalAlignment(SwingConstants.CENTER);
+        label_gender.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 16));
         
         label_point = new JLabel("");
         label_point.setForeground(Color.DARK_GRAY);
         label_point.setAlignmentX(Component.CENTER_ALIGNMENT);
         label_point.setHorizontalAlignment(SwingConstants.CENTER);
-        label_point.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+        label_point.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 16));
         
         JButton button_back_course = new JButton("\u8AB2\u7A0B\u8A55\u8AD6\u7BA1\u7406");
         button_back_course.setForeground(Color.DARK_GRAY);
         button_back_course.setBorder(new EtchedBorder(EtchedBorder.RAISED, new Color(255, 153, 0), new Color(204, 204, 204)));
         button_back_course.setBackground(new Color(255, 153, 102));
         button_back_course.setAlignmentX(Component.CENTER_ALIGNMENT);
-        button_back_course.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+        button_back_course.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 16));
         button_back_course.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				window.frame.setVisible(false);
@@ -178,11 +178,11 @@ public class point_page {
 			}
 		});
         
-        JLabel label_point1 = new JLabel("ÂI¼Æ");
+        JLabel label_point1 = new JLabel("ï¿½Iï¿½ï¿½");
         label_point1.setForeground(Color.DARK_GRAY);
         label_point1.setAlignmentX(Component.CENTER_ALIGNMENT);
         label_point1.setHorizontalAlignment(SwingConstants.CENTER);
-        label_point1.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+        label_point1.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 16));
         GroupLayout gl_panel = new GroupLayout(panel);
         gl_panel.setHorizontalGroup(
         	gl_panel.createParallelGroup(Alignment.TRAILING)
@@ -194,7 +194,7 @@ public class point_page {
         				.addComponent(label_point1, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
         				.addComponent(label_student_id, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
         				.addComponent(label_major, GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
-        				.addComponent(label_grade, GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
+        				.addComponent(label_gender, GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
         				.addComponent(label_studentName, GroupLayout.PREFERRED_SIZE, 178, GroupLayout.PREFERRED_SIZE))
         			.addContainerGap())
         );
@@ -208,7 +208,7 @@ public class point_page {
         			.addPreferredGap(ComponentPlacement.RELATED)
         			.addComponent(label_major, GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
         			.addPreferredGap(ComponentPlacement.RELATED)
-        			.addComponent(label_grade, GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+        			.addComponent(label_gender, GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
         			.addGap(103)
         			.addComponent(label_point1, GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
         			.addPreferredGap(ComponentPlacement.RELATED)
@@ -246,7 +246,7 @@ public class point_page {
 
 		
 		try  {
-			//sqlserver³s½u
+			//sqlserverï¿½sï¿½u
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			System.out.println("Driver loaded!");
 			final Connection connection = DriverManager.getConnection(connectionUrl);
@@ -259,11 +259,11 @@ public class point_page {
 			//frame.setVisible(true);
 	        
 	        //student_info
-			String student_info_selectSql = "SELECT Student_ID,Student_Name,Major,Grade,Point FROM [FinalProject].[dbo].[STUDENT] WHERE Student_ID = "+login_page.getStudent_id();
+			String student_info_selectSql = "SELECT Student_ID,Student_Name,Major,Gender,Point FROM [FinalProject].[dbo].[STUDENT] WHERE Student_ID = "+login_page.getStudent_id();
 
 			ResultSet student_info_resultSet = statement.executeQuery(student_info_selectSql);
 
-			JLabel [] student_info_label = {label_student_id,label_studentName,label_major,label_grade,label_point};
+			JLabel [] student_info_label = {label_student_id,label_studentName,label_major,label_gender,label_point};
 
 			while (student_info_resultSet.next()) {
 				for (int a =1;a<6;a++) {
@@ -282,8 +282,8 @@ public class point_page {
 			label_studentName.setForeground(Color.RED);
 			label_major.setText("Error");
 			label_major.setForeground(Color.RED);
-			label_grade.setText("Error");
-			label_grade.setForeground(Color.RED);
+			label_gender.setText("Error");
+			label_gender.setForeground(Color.RED);
 			label_point.setText("Error");
 			label_point.setForeground(Color.RED);		
         }
@@ -293,7 +293,7 @@ public class point_page {
 		String connectionUrl ="jdbc:sqlserver://localhost;databaseName=FinalProject;integratedSecurity=true;";
 
 		try  {
-			//sqlserver³s½u
+			//sqlserverï¿½sï¿½u
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			System.out.println("Driver loaded!");
 			Connection connection = DriverManager.getConnection(connectionUrl);
@@ -301,14 +301,14 @@ public class point_page {
 			//enroll
 			Statement statement = connection.createStatement();
 			String table_selectSql = 
-					"(SELECT Bonus_Time As 'Time',Bonus_ID AS Point_ID,(case when Bonus_ID is null then 'ªÅ­È' else 'Bonus' end) as Type,(case when Exam_ID is null then '¶ñ¼gµû½×' else '´£¨Ñ¦Ò¥jÃD' end) as Title,Point,Bonus_Balance FROM BONUS WHERE Bonus.Student_ID = " +login_page.getStudent_id()+ 
+					"(SELECT Bonus_Time As 'Time',Bonus_ID AS Point_ID,(case when Bonus_ID is null then 'ï¿½Å­ï¿½' else 'Bonus' end) as Type,(case when Exam_ID is null then 'ï¿½ï¿½gï¿½ï¿½ï¿½ï¿½' else 'ï¿½ï¿½ï¿½Ñ¦Ò¥jï¿½D' end) as Title,Point,Bonus_Balance FROM BONUS WHERE Bonus.Student_ID = " +login_page.getStudent_id()+ 
 					" UNION" + 
-					" SELECT Purchased_Time As 'Time' ,Purchased_ID AS Point_ID,(case when Purchased_ID is null then 'ªÅ­È' else 'Purchase' end) as Type,(case when Purchased_ID is null then 'ªÅ­È' else '§I´«¦Ò¥jÃD' end) as Title,Price,Purchased_Balance FROM PURCHASE,PAST_EXAM  WHERE PURCHASE.Student_ID = "+login_page.getStudent_id()+
+					" SELECT Purchased_Time As 'Time' ,Purchased_ID AS Point_ID,(case when Purchased_ID is null then 'ï¿½Å­ï¿½' else 'Purchase' end) as Type,(case when Purchased_ID is null then 'ï¿½Å­ï¿½' else 'ï¿½Iï¿½ï¿½ï¿½Ò¥jï¿½D' end) as Title,Price,Purchased_Balance FROM PURCHASE,PAST_EXAM  WHERE PURCHASE.Student_ID = "+login_page.getStudent_id()+
 					") ORDER BY 'Time' DESC";
 			System.out.println(table_selectSql);
 	
 			ResultSet resultSet = statement.executeQuery(table_selectSql);
-			String[] columnNames = {"®É¶¡","ÂI¼Æ½s¸¹","Ãþ«¬","ºK­n","ÂI¼Æ","ÂI¼Æ¾lÃB"};
+			String[] columnNames = {"ï¿½É¶ï¿½","ï¿½Iï¿½Æ½sï¿½ï¿½","ï¿½ï¿½ï¿½ï¿½","ï¿½Kï¿½n","ï¿½Iï¿½ï¿½","ï¿½Iï¿½Æ¾lï¿½B"};
 			String[][] datas = new String[25][25];
 			int i = 0;
 			while (resultSet.next()) {
@@ -325,7 +325,7 @@ public class point_page {
 			
 			
 			temptable = new JTable(datas, columnNames){
-				public boolean isCellEditable(int row, int column){ //µLªk½s¿è
+				public boolean isCellEditable(int row, int column){ //ï¿½Lï¿½kï¿½sï¿½ï¿½
 					return false;
 				}
 			};

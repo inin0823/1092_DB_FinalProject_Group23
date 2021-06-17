@@ -104,7 +104,7 @@ public class course_comment_page extends JFrame{
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setTitle("½Òµ{µû½×¶ñ¼g¤Î­×§ï");
+		frame.setTitle("èª²ç¨‹è©•è«–å¡«å¯«åŠä¿®æ”¹");
 		frame.getContentPane().setBackground(new Color(255, 204, 204));
 		frame.setBounds(300, 50, 550, 600);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -113,7 +113,7 @@ public class course_comment_page extends JFrame{
 		textArea = new JTextArea();
 		textArea.setLineWrap(true);
 		textArea.setForeground(Color.DARK_GRAY);
-		textArea.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		textArea.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		textArea.setBackground(new Color(255, 245, 238));
 		textArea.setBounds(35, 272, 465, 140);
 		frame.getContentPane().add(textArea);
@@ -138,7 +138,7 @@ public class course_comment_page extends JFrame{
 			}
 		});
 		button_send.setForeground(Color.DARK_GRAY);
-		button_send.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		button_send.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		button_send.setBorder(new EtchedBorder(EtchedBorder.RAISED, new Color(255, 153, 0), new Color(204, 204, 204)));
 		button_send.setBackground(new Color(255, 153, 102));
 		button_send.setAlignmentX(0.5f);
@@ -149,7 +149,7 @@ public class course_comment_page extends JFrame{
 		label_Recommended_Rate.setBorder(new EmptyBorder(0, 0, 0, 0));
 		label_Recommended_Rate.setHorizontalAlignment(SwingConstants.CENTER);
 		label_Recommended_Rate.setForeground(Color.DARK_GRAY);
-		label_Recommended_Rate.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_Recommended_Rate.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_Recommended_Rate.setOpaque(true); 
 		label_Recommended_Rate.setBackground(new Color(176, 224, 230));
 		label_Recommended_Rate.setAlignmentX(0.5f);
@@ -160,7 +160,7 @@ public class course_comment_page extends JFrame{
 		label_Recommended_Rate_1.setOpaque(true);
 		label_Recommended_Rate_1.setHorizontalAlignment(SwingConstants.CENTER);
 		label_Recommended_Rate_1.setForeground(Color.DARK_GRAY);
-		label_Recommended_Rate_1.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_Recommended_Rate_1.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_Recommended_Rate_1.setBorder(new EmptyBorder(0, 0, 0, 0));
 		label_Recommended_Rate_1.setBackground(new Color(176, 224, 230));
 		label_Recommended_Rate_1.setAlignmentX(0.5f);
@@ -179,7 +179,7 @@ public class course_comment_page extends JFrame{
 		label_Year_Semester.setBackground(new Color(102, 153, 204));
 		label_Year_Semester.setHorizontalAlignment(SwingConstants.CENTER);
 		label_Year_Semester.setForeground(Color.DARK_GRAY);
-		label_Year_Semester.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_Year_Semester.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_Year_Semester.setAlignmentX(0.5f);
 		
 		JLabel label_Course_ID = new JLabel("\u8AB2\u7A0B\u7DE8\u865F");
@@ -188,7 +188,7 @@ public class course_comment_page extends JFrame{
 		label_Course_ID.setBackground(new Color(102, 153, 204));
 		label_Course_ID.setHorizontalAlignment(SwingConstants.CENTER);
 		label_Course_ID.setForeground(Color.DARK_GRAY);
-		label_Course_ID.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_Course_ID.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_Course_ID.setAlignmentX(0.5f);
 		
 		JLabel label_CourseName = new JLabel("\u8AB2\u7A0B\u540D\u7A31");
@@ -197,7 +197,7 @@ public class course_comment_page extends JFrame{
 		label_CourseName.setBackground(new Color(102, 153, 204));
 		label_CourseName.setHorizontalAlignment(SwingConstants.CENTER);
 		label_CourseName.setForeground(Color.DARK_GRAY);
-		label_CourseName.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_CourseName.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_CourseName.setAlignmentX(0.5f);
 		
 		JLabel label_Class_Session = new JLabel("\u4E0A\u8AB2\u6642\u9593");
@@ -206,7 +206,7 @@ public class course_comment_page extends JFrame{
 		label_Class_Session.setBackground(new Color(102, 153, 204));
 		label_Class_Session.setHorizontalAlignment(SwingConstants.CENTER);
 		label_Class_Session.setForeground(Color.DARK_GRAY);
-		label_Class_Session.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_Class_Session.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_Class_Session.setAlignmentX(0.5f);
 		
 		JLabel label_Credit = new JLabel("\u8AB2\u7A0B\u5B78\u5206");
@@ -215,7 +215,7 @@ public class course_comment_page extends JFrame{
 		label_Credit.setBackground(new Color(102, 153, 204));
 		label_Credit.setHorizontalAlignment(SwingConstants.CENTER);
 		label_Credit.setForeground(Color.DARK_GRAY);
-		label_Credit.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_Credit.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_Credit.setAlignmentX(0.5f);
 		
 		JLabel label_Teacher = new JLabel("\u6388\u8AB2\u6559\u5E2B");
@@ -224,13 +224,13 @@ public class course_comment_page extends JFrame{
 		label_Teacher.setBackground(new Color(102, 153, 204));
 		label_Teacher.setHorizontalAlignment(SwingConstants.CENTER);
 		label_Teacher.setForeground(Color.DARK_GRAY);
-		label_Teacher.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_Teacher.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_Teacher.setAlignmentX(0.5f);
 		
 		label_Year_Semester_1 = new JLabel("");
 		label_Year_Semester_1.setHorizontalAlignment(SwingConstants.CENTER);
 		label_Year_Semester_1.setForeground(new Color(51, 102, 153));
-		label_Year_Semester_1.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_Year_Semester_1.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_Year_Semester_1.setBackground(new Color(102, 153, 204));
 		label_Year_Semester_1.setAlignmentX(0.5f);
 		label_Year_Semester_1.setBounds(100, 22, 126, 23);
@@ -239,7 +239,7 @@ public class course_comment_page extends JFrame{
 		label_Course_ID_1 = new JLabel("");
 		label_Course_ID_1.setHorizontalAlignment(SwingConstants.CENTER);
 		label_Course_ID_1.setForeground(new Color(51, 102, 153));
-		label_Course_ID_1.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_Course_ID_1.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_Course_ID_1.setBackground(new Color(102, 153, 204));
 		label_Course_ID_1.setAlignmentX(0.5f);
 		label_Course_ID_1.setBounds(98, 66, 128, 23);
@@ -248,7 +248,7 @@ public class course_comment_page extends JFrame{
 		label_CourseName_1 = new JLabel("");
 		label_CourseName_1.setHorizontalAlignment(SwingConstants.CENTER);
 		label_CourseName_1.setForeground(new Color(51, 102, 153));
-		label_CourseName_1.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_CourseName_1.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_CourseName_1.setBackground(new Color(102, 153, 204));
 		label_CourseName_1.setAlignmentX(0.5f);
 		label_CourseName_1.setBounds(100, 107, 126, 23);
@@ -257,7 +257,7 @@ public class course_comment_page extends JFrame{
 		label_Class_Session_1 = new JLabel("");
 		label_Class_Session_1.setHorizontalAlignment(SwingConstants.CENTER);
 		label_Class_Session_1.setForeground(new Color(51, 102, 153));
-		label_Class_Session_1.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_Class_Session_1.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_Class_Session_1.setBackground(new Color(102, 153, 204));
 		label_Class_Session_1.setAlignmentX(0.5f);
 		label_Class_Session_1.setBounds(316, 22, 139, 23);
@@ -266,7 +266,7 @@ public class course_comment_page extends JFrame{
 		label_Credit_1 = new JLabel("");
 		label_Credit_1.setHorizontalAlignment(SwingConstants.CENTER);
 		label_Credit_1.setForeground(new Color(51, 102, 153));
-		label_Credit_1.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_Credit_1.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_Credit_1.setBackground(new Color(102, 153, 204));
 		label_Credit_1.setAlignmentX(0.5f);
 		label_Credit_1.setBounds(316, 66, 139, 23);
@@ -275,7 +275,7 @@ public class course_comment_page extends JFrame{
 		label_Teacher_1 = new JLabel("");
 		label_Teacher_1.setHorizontalAlignment(SwingConstants.CENTER);
 		label_Teacher_1.setForeground(new Color(51, 102, 153));
-		label_Teacher_1.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_Teacher_1.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_Teacher_1.setBackground(new Color(102, 153, 204));
 		label_Teacher_1.setAlignmentX(0.5f);
 		label_Teacher_1.setBounds(316, 107, 139, 23);
@@ -285,7 +285,7 @@ public class course_comment_page extends JFrame{
 		label_Recommended_Rate_1_1.setOpaque(true);
 		label_Recommended_Rate_1_1.setHorizontalAlignment(SwingConstants.CENTER);
 		label_Recommended_Rate_1_1.setForeground(Color.DARK_GRAY);
-		label_Recommended_Rate_1_1.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_Recommended_Rate_1_1.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_Recommended_Rate_1_1.setBorder(new EmptyBorder(0, 0, 0, 0));
 		label_Recommended_Rate_1_1.setBackground(new Color(176, 224, 230));
 		label_Recommended_Rate_1_1.setAlignmentX(0.5f);
@@ -296,7 +296,7 @@ public class course_comment_page extends JFrame{
 		label_Recommended_Rate_2.setOpaque(true);
 		label_Recommended_Rate_2.setHorizontalAlignment(SwingConstants.CENTER);
 		label_Recommended_Rate_2.setForeground(Color.DARK_GRAY);
-		label_Recommended_Rate_2.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_Recommended_Rate_2.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_Recommended_Rate_2.setBorder(new EmptyBorder(0, 0, 0, 0));
 		label_Recommended_Rate_2.setBackground(new Color(176, 224, 230));
 		label_Recommended_Rate_2.setAlignmentX(0.5f);
@@ -307,7 +307,7 @@ public class course_comment_page extends JFrame{
 		label_Recommended_Rate_3.setOpaque(true);
 		label_Recommended_Rate_3.setHorizontalAlignment(SwingConstants.CENTER);
 		label_Recommended_Rate_3.setForeground(Color.DARK_GRAY);
-		label_Recommended_Rate_3.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 16));
+		label_Recommended_Rate_3.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 16));
 		label_Recommended_Rate_3.setBorder(new EmptyBorder(0, 0, 0, 0));
 		label_Recommended_Rate_3.setBackground(new Color(176, 224, 230));
 		label_Recommended_Rate_3.setAlignmentX(0.5f);
@@ -317,7 +317,7 @@ public class course_comment_page extends JFrame{
 		comboBox_Recommended_Rate = new JComboBox();
 		comboBox_Recommended_Rate.setModel(new DefaultComboBoxModel(new String[] {"\u2605", "\u2605\u2605", "\u2605\u2605\u2605", "\u2605\u2605\u2605\u2605", "\u2605\u2605\u2605\u2605\u2605"}));
 		comboBox_Recommended_Rate.setBorder(new LineBorder(new Color(128, 128, 128), 0, true));
-		comboBox_Recommended_Rate.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 18));
+		comboBox_Recommended_Rate.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 18));
 		comboBox_Recommended_Rate.setBackground(new Color(211, 211, 211));
 		comboBox_Recommended_Rate.setBounds(35, 465, 139, 33);
 		frame.getContentPane().add(comboBox_Recommended_Rate);
@@ -325,7 +325,7 @@ public class course_comment_page extends JFrame{
 		
 		comboBox_Sweetness = new JComboBox();
 		comboBox_Sweetness.setModel(new DefaultComboBoxModel(new String[] {"\u2605", "\u2605\u2605", "\u2605\u2605\u2605", "\u2605\u2605\u2605\u2605", "\u2605\u2605\u2605\u2605\u2605"}));
-		comboBox_Sweetness.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 18));
+		comboBox_Sweetness.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 18));
 		comboBox_Sweetness.setBorder(new LineBorder(new Color(128, 128, 128), 0, true));
 		comboBox_Sweetness.setBackground(new Color(211, 211, 211));
 		comboBox_Sweetness.setBounds(197, 465, 139, 33);
@@ -333,7 +333,7 @@ public class course_comment_page extends JFrame{
 		
 		comboBox_Loading = new JComboBox();
 		comboBox_Loading.setModel(new DefaultComboBoxModel(new String[] {"\u2605", "\u2605\u2605", "\u2605\u2605\u2605", "\u2605\u2605\u2605\u2605", "\u2605\u2605\u2605\u2605\u2605"}));
-		comboBox_Loading.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 18));
+		comboBox_Loading.setFont(new Font("å¾®è»Ÿæ­£é»‘é«”", Font.BOLD, 18));
 		comboBox_Loading.setBorder(new LineBorder(new Color(128, 128, 128), 0, true));
 		comboBox_Loading.setBackground(new Color(211, 211, 211));
 		comboBox_Loading.setBounds(361, 465, 139, 33);
@@ -344,7 +344,7 @@ public class course_comment_page extends JFrame{
 	public static void comment_course_information(String comment_course_ID)  throws ClassNotFoundException {
 		String connectionUrl ="jdbc:sqlserver://localhost;databaseName=FinalProject;integratedSecurity=true;";
 		try  {
-			//sqlserver³s½u
+			//sqlserveré€£ç·š
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			System.out.println("Driver loaded!");
 			Connection connection = DriverManager.getConnection(connectionUrl);
@@ -363,7 +363,7 @@ public class course_comment_page extends JFrame{
 				for (int a =1;a<7;a++) {
 					course_info_label[a-1].setText(course_info_resultSet.getString(a).replace(" ",""));
 				}				
-			}
+			} 
 			
 		}catch (SQLException e) {
             e.printStackTrace();
@@ -384,14 +384,14 @@ public class course_comment_page extends JFrame{
 	public static void addcomment() throws ClassNotFoundException{
 		String connectionUrl ="jdbc:sqlserver://localhost;databaseName=FinalProject;integratedSecurity=true;";
 		try  {
-			//sqlserver³s½u
+			//sqlserveré€£ç·š
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			System.out.println("Driver loaded!");
 			Connection connection = DriverManager.getConnection(connectionUrl);
 			System.out.println("MSSQL Connection Success");
 			Statement statement = connection.createStatement();
 			
-			//¨ú±o°e¥X®É¶¡
+			//å–å¾—é€å‡ºæ™‚é–“
 			DateTimeFormatter comment_time = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 			
 			//comment
@@ -423,7 +423,7 @@ public class course_comment_page extends JFrame{
 			comment_insertSql.execute();
 			System.out.println(comment_time.format(LocalDateTime.now()));
 			//comment status
-			String comment_status_updateSql = "UPDATE [FinalProject].[dbo].[ENROLL] SET Comment_Status = '¶ñ¼g' WHERE Student_ID = "+login_page.getStudent_id()+" AND [FinalProject].[dbo].[ENROLL].Course_ID = "+comment_course_ID;
+			String comment_status_updateSql = "UPDATE [FinalProject].[dbo].[ENROLL] SET Comment_Status = 'å¡«å¯«' WHERE Student_ID = "+login_page.getStudent_id()+" AND [FinalProject].[dbo].[ENROLL].Course_ID = "+comment_course_ID;
 			statement.executeUpdate(comment_status_updateSql);
 			
 			//bonus
@@ -444,7 +444,7 @@ public class course_comment_page extends JFrame{
 			}
 			String bonus_ID = String.format("B%09d", int_bonus_ID);
 			
-			int comment_bonus_point = 5; //comment ÂI¼Æ(¥i§ó§ï)
+			int comment_bonus_point = 5; //comment é»æ•¸(å¯æ›´æ”¹)
 			
 			int bonus_balance = Integer.parseInt(info.label_point.getText())+comment_bonus_point;
 			
@@ -486,7 +486,7 @@ public class course_comment_page extends JFrame{
 	public static void comment_information(String comment_ID)  throws ClassNotFoundException {
 		String connectionUrl ="jdbc:sqlserver://localhost;databaseName=FinalProject;integratedSecurity=true;";
 		try  {
-			//sqlserver³s½u
+			//sqlserveré€£ç·š
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			System.out.println("Driver loaded!");
 			Connection connection = DriverManager.getConnection(connectionUrl);
@@ -511,14 +511,14 @@ public class course_comment_page extends JFrame{
 	public static void changecomment() throws ClassNotFoundException{
 		String connectionUrl ="jdbc:sqlserver://localhost;databaseName=FinalProject;integratedSecurity=true;";
 		try  {
-			//sqlserver³s½u
+			//sqlserveré€£ç·š
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			System.out.println("Driver loaded!");
 			Connection connection = DriverManager.getConnection(connectionUrl);
 			System.out.println("MSSQL Connection Success");
 			Statement statement = connection.createStatement();
 			
-			//¨ú±o­×§ï®É¶¡
+			//å–å¾—ä¿®æ”¹æ™‚é–“
 			DateTimeFormatter comment_update_time = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");			
 			
 			//comment change

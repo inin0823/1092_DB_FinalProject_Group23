@@ -59,7 +59,7 @@ public class info {
 	public static JLabel label_student_id;
 	public static JLabel label_studentName;
 	public static JLabel label_major;
-	public static JLabel label_grade;
+	public static JLabel label_gender;
 	public static JLabel label_point;
 	static info window;
 	/**
@@ -115,7 +115,7 @@ public class info {
         						window.frame.setVisible(false);
         					}
 
-        					
+        					 
         				});
         		
         		JLabel lblNewLabel = new JLabel("NCCU 課程評論系統");
@@ -169,11 +169,11 @@ public class info {
         label_studentName.setHorizontalAlignment(SwingConstants.CENTER);
         label_studentName.setFont(new Font("微軟正黑體", Font.BOLD, 16));
         
-        label_grade = new JLabel("年級");
-        label_grade.setForeground(Color.DARK_GRAY);
-        label_grade.setAlignmentX(Component.CENTER_ALIGNMENT);
-        label_grade.setHorizontalAlignment(SwingConstants.CENTER);
-        label_grade.setFont(new Font("微軟正黑體", Font.BOLD, 16));
+        label_gender = new JLabel("年級");
+        label_gender.setForeground(Color.DARK_GRAY);
+        label_gender.setAlignmentX(Component.CENTER_ALIGNMENT);
+        label_gender.setHorizontalAlignment(SwingConstants.CENTER);
+        label_gender.setFont(new Font("微軟正黑體", Font.BOLD, 16));
         
         label_point = new JLabel("");
         label_point.setForeground(Color.DARK_GRAY);
@@ -212,7 +212,7 @@ public class info {
         				.addComponent(label_point1, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
         				.addComponent(label_student_id, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
         				.addComponent(label_major, GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
-        				.addComponent(label_grade, GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
+        				.addComponent(label_gender, GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
         				.addComponent(label_studentName, GroupLayout.PREFERRED_SIZE, 178, GroupLayout.PREFERRED_SIZE))
         			.addContainerGap())
         );
@@ -226,7 +226,7 @@ public class info {
         			.addPreferredGap(ComponentPlacement.RELATED)
         			.addComponent(label_major, GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
         			.addPreferredGap(ComponentPlacement.RELATED)
-        			.addComponent(label_grade, GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+        			.addComponent(label_gender, GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
         			.addGap(103)
         			.addComponent(label_point1, GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
         			.addPreferredGap(ComponentPlacement.RELATED)
@@ -318,11 +318,11 @@ public class info {
 			//frame.setVisible(true);
 	        
 	        //student_info
-			String student_info_selectSql = "SELECT Student_ID,Student_Name,Major,Grade,Point FROM [FinalProject].[dbo].[STUDENT] WHERE Student_ID = "+login_page.getStudent_id();
+			String student_info_selectSql = "SELECT Student_ID,Student_Name,Major,Gender,Point FROM [FinalProject].[dbo].[STUDENT] WHERE Student_ID = "+login_page.getStudent_id();
 
 			ResultSet student_info_resultSet = statement.executeQuery(student_info_selectSql);
 
-			JLabel [] student_info_label = {label_student_id,label_studentName,label_major,label_grade,label_point};
+			JLabel [] student_info_label = {label_student_id,label_studentName,label_major,label_gender,label_point};
 
 			while (student_info_resultSet.next()) {
 				for (int a =1;a<6;a++) {
@@ -341,8 +341,8 @@ public class info {
 			label_studentName.setForeground(Color.RED);
 			label_major.setText("Error");
 			label_major.setForeground(Color.RED);
-			label_grade.setText("Error");
-			label_grade.setForeground(Color.RED);
+			label_gender.setText("Error");
+			label_gender.setForeground(Color.RED);
 			label_point.setText("Error");
 			label_point.setForeground(Color.RED);		
         }
