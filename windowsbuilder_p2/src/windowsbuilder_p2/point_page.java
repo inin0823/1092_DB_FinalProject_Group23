@@ -41,7 +41,7 @@ public class point_page {
 	public static JLabel label_major;
 	public static JLabel label_gender;
 	public static JLabel label_point;
-	static info window;
+	static point_page window;
 
 	/**
 	 * Launch the application.
@@ -330,12 +330,13 @@ public class point_page {
 				}
 			};
 			
+	
 			DefaultTableCellRenderer  renderer  =  new  DefaultTableCellRenderer();   //set column align center
 			renderer.setHorizontalAlignment(JTextField.CENTER);
 			for (int a=0;a<=5;a++) {
 				temptable.getColumnModel().getColumn(a).setCellRenderer(renderer);
 			}
-			
+			temptable.getTableHeader().setReorderingAllowed(false);
 			temptable.setRowHeight(30);           
 			temptable.setCellSelectionEnabled(true);
 			//temptable.setBounds(30, 94, 315, 157);

@@ -275,45 +275,52 @@ public class info {
 			
 	        temptable.addMouseListener(new MouseAdapter() {
 				public void mouseClicked(MouseEvent e) {
-					int tableColumn=temptable.columnAtPoint(e.getPoint());
-					int tableRow=temptable.rowAtPoint(e.getPoint());
-					String comment_course_ID = temptable.getValueAt(tableRow,1).toString();
-					String comment_ID = "";
-
-					String comment_ID_selectSql = "SELECT Comment_ID FROM [FinalProject].[dbo].[COMMENT] WHERE Student_ID = "+login_page.getStudent_id()+" AND Course_ID = "+comment_course_ID;
-					ResultSet comment_ID_resultSet;
 					try {
-						comment_ID_resultSet = statement.executeQuery(comment_ID_selectSql);
-						while(comment_ID_resultSet.next()) {
-							comment_ID = comment_ID_resultSet.getString("Comment_ID");
+						int tableColumn=temptable.columnAtPoint(e.getPoint());
+						int tableRow=temptable.rowAtPoint(e.getPoint());
+						String comment_course_ID = temptable.getValueAt(tableRow,1).toString();
+						String comment_ID = "";
+
+						String comment_ID_selectSql = "SELECT Comment_ID FROM [FinalProject].[dbo].[COMMENT] WHERE Student_ID = "+login_page.getStudent_id()+" AND Course_ID = "+comment_course_ID;
+						ResultSet comment_ID_resultSet;
+						try {
+							comment_ID_resultSet = statement.executeQuery(comment_ID_selectSql);
+							while(comment_ID_resultSet.next()) {
+								comment_ID = comment_ID_resultSet.getString("Comment_ID");
+							}
+						} catch (SQLException e2) {
+							// TODO Auto-generated catch block
+							e2.printStackTrace();
 						}
-					} catch (SQLException e2) {
-						// TODO Auto-generated catch block
-						e2.printStackTrace();
+						
+						if (tableColumn ==6) {					
+							if(temptable.getValueAt(tableRow,tableColumn).equals("未填寫")) {
+								try {
+									course_comment_page course_comment_page = new course_comment_page(comment_course_ID);
+									course_comment_page.frame.setVisible(true);
+								} catch (ClassNotFoundException e1) {
+									// TODO Auto-generated catch block
+									e1.printStackTrace();
+								}	
+							}
+							else {
+								try {
+									course_comment_page course_comment_page=new course_comment_page(comment_course_ID,comment_ID);	
+									course_comment_page.frame.setVisible(true);
+								}
+								catch (Exception ex) {
+							           ex.getMessage();
+							    }
+							}
+						}		
+					   }catch(NullPointerException exception){
+						   exception.getMessage();
+						   System.out.println("沒有課程");
+						}
+					   }
 					}
 					
-					if (tableColumn ==6) {					
-						if(temptable.getValueAt(tableRow,tableColumn).equals("未填寫")) {
-							try {
-								course_comment_page course_comment_page = new course_comment_page(comment_course_ID);
-								course_comment_page.frame.setVisible(true);
-							} catch (ClassNotFoundException e1) {
-								// TODO Auto-generated catch block
-								e1.printStackTrace();
-							}	
-						}
-						else {
-							try {
-								course_comment_page course_comment_page=new course_comment_page(comment_course_ID,comment_ID);	
-								course_comment_page.frame.setVisible(true);
-							}
-							catch (Exception ex) {
-						           ex.getMessage();
-						       }
-						}
-					}		
-				   }
-			});
+			);
 			//frame.setSize(300, 400);  
 			//frame.setVisible(true);
 	        
@@ -346,6 +353,7 @@ public class info {
 			label_point.setText("Error");
 			label_point.setForeground(Color.RED);		
         }
+		
 	}
 	
 	public static void createTable() throws ClassNotFoundException {
@@ -400,7 +408,7 @@ public class info {
 				temptable.getColumnModel().getColumn(a).setCellRenderer(renderer);
 			}
 			
-			
+			temptable.getTableHeader().setReorderingAllowed(false);
 			temptable.setRowHeight(30);           
 			temptable.setCellSelectionEnabled(true);
 			//temptable.setBounds(30, 94, 315, 157);
@@ -418,5 +426,6 @@ public class info {
     }
 	
 	}
+	
 	
 }
