@@ -26,6 +26,8 @@ import java.awt.event.ActionEvent;
 public class fourm_page {
 
 	private JFrame frmFourm;
+	private JFrame frame;
+	
 	public static JLabel label_CourseID_1;
 	public static JLabel label_CourseName_1;
 	public static JLabel label_Teacher_1;
@@ -43,6 +45,8 @@ public class fourm_page {
 	public static JButton btnDislike;
 	public static JButton btnReply;
 	public static JTextArea textArea_Comment;
+	public static JTextArea textArea_Reply;
+	
 	public static String CourseID = "306008011";
 	public static int CommentID = 0000000001;
 	public static int floor = 1;
@@ -58,6 +62,7 @@ public class fourm_page {
 				try {
 					fourm_page window = new fourm_page();
 					window.frmFourm.setVisible(true);
+
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -74,6 +79,7 @@ public class fourm_page {
 		courseinfo();
 		commentinfo(0);
 		evaluationinfo();
+		
 	}
 
 	/**
@@ -247,7 +253,19 @@ public class fourm_page {
 		btnReply = new JButton("Reply");
 		btnReply.setBounds(179, 217, 71, 23);
 		panel_CourseFourm.add(btnReply);
-		
+		btnReply.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Reply_Page window = new Reply_Page(floor);
+					window.frame.setVisible(true);
+				}
+				 catch (ClassNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				
+			}
+		});
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(35, 39, 351, 154);
 		panel_CourseFourm.add(scrollPane);
