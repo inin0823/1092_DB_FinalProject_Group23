@@ -45,6 +45,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.border.EtchedBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.JTableHeader;
 
 import com.jgoodies.forms.layout.FormLayout;
 import com.jgoodies.forms.layout.ColumnSpec;
@@ -325,7 +326,7 @@ public class info {
 			//frame.setVisible(true);
 	        
 	        //student_info
-			String student_info_selectSql = "SELECT Student_ID,Student_Name,Major,Gender,Point FROM [FinalProject].[dbo].[STUDENT] WHERE Student_ID = "+login_page.getStudent_id();
+			String student_info_selectSql = "SELECT Student_ID,Student_Name,Major,Grade,Point FROM [FinalProject].[dbo].[STUDENT] WHERE Student_ID = "+login_page.getStudent_id();
 
 			ResultSet student_info_resultSet = statement.executeQuery(student_info_selectSql);
 
@@ -410,6 +411,9 @@ public class info {
 			
 			temptable.getTableHeader().setReorderingAllowed(false);
 			temptable.setRowHeight(30);           
+			temptable.setFont(new Font("微軟正黑體", Font.PLAIN, 12));
+			JTableHeader tab_header = temptable.getTableHeader();//獲取表頭		
+			tab_header.setFont(new Font("微軟正黑體", Font.BOLD, 12));	
 			temptable.setCellSelectionEnabled(true);
 			//temptable.setBounds(30, 94, 315, 157);
 			JScrollPane scroll = new JScrollPane(temptable, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);

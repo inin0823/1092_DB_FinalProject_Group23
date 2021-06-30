@@ -5,7 +5,7 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import java.awt.BorderLayout;
 import java.awt.Color;
-
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;
@@ -25,7 +25,7 @@ public class login_page {
 
 	static JFrame frame;
 	private JTextField id_input;
-	private JTextField pw_input;
+	private JPasswordField pw_input;
 	private JLabel lblNewLabel_1;
 	static login_page window;
 	public static String student_id;
@@ -59,48 +59,49 @@ public class login_page {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setTitle("ï¿½tï¿½Îµnï¿½Jï¿½ï¿½ï¿½ï¿½");
+		frame.setTitle("¨t²Îµn¤J­¶­±");
 		frame.getContentPane().setBackground(new Color(153, 204, 204));
 		frame.setBounds(150, 50, 800, 600);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("ï¿½Ç¸ï¿½");
+		JLabel lblNewLabel = new JLabel("¾Ç¸¹");
 		lblNewLabel.setForeground(Color.DARK_GRAY);
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 20));
+		lblNewLabel.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 20));
 		lblNewLabel.setBounds(262, 252, 57, 19);
 		frame.getContentPane().add(lblNewLabel);
 		
-		JLabel lblPassword = new JLabel("ï¿½Kï¿½X");
+		JLabel lblPassword = new JLabel("±K½X");
 		lblPassword.setForeground(Color.DARK_GRAY);
 		lblPassword.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPassword.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 20));
+		lblPassword.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 20));
 		lblPassword.setBounds(262, 305, 57, 19);
 		frame.getContentPane().add(lblPassword);
 		
 		id_input = new JTextField();
-		id_input.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 18));
+		id_input.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 18));
 		id_input.setBounds(340, 246, 192, 25);
 		frame.getContentPane().add(id_input);
 		id_input.setColumns(10);
 		
-		pw_input = new JTextField();
-		pw_input.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 18));
+		pw_input = new JPasswordField();
+		pw_input.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 18));
 		pw_input.setColumns(10);
 		pw_input.setBounds(340, 299, 192, 25);
 		frame.getContentPane().add(pw_input);
+		pw_input.setEchoChar('*');
 		
 		lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 20));
+		lblNewLabel_1.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 20));
 		lblNewLabel_1.setBounds(262, 412, 287, 25);
 		frame.getContentPane().add(lblNewLabel_1);
 		
-		JButton btnNewButton = new JButton("ï¿½nï¿½J");
+		JButton btnNewButton = new JButton("µn¤J");
 		btnNewButton.setForeground(Color.DARK_GRAY);
 		btnNewButton.setBackground(new Color(255, 153, 102));
-		btnNewButton.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 20));
+		btnNewButton.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 20));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
@@ -112,7 +113,7 @@ public class login_page {
 						//window.frame.dispatchEvent(new WindowEvent(frame, WindowEvent.WINDOW_CLOSING));
 					}
 					else {
-						lblNewLabel_1.setText("ï¿½Ð¿ï¿½Jï¿½ï¿½ï¿½Tï¿½ï¿½ï¿½Ç¸ï¿½ï¿½Mï¿½Kï¿½X");
+						lblNewLabel_1.setText("½Ð¿é¤J¥¿½Tªº¾Ç¸¹©M±K½X");
 						lblNewLabel_1.setForeground(Color.RED);
 					}
 				} catch (ClassNotFoundException e1) {
@@ -129,7 +130,7 @@ public class login_page {
 		lblNewLabel_2.setForeground(Color.DARK_GRAY);
 		lblNewLabel_2.setBackground(new Color(255, 204, 204));
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_2.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 24));
+		lblNewLabel_2.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 24));
 		lblNewLabel_2.setBounds(252, 194, 280, 25);
 		frame.getContentPane().add(lblNewLabel_2);
 		
@@ -137,7 +138,7 @@ public class login_page {
 		lblNccu.setForeground(Color.DARK_GRAY);
 		lblNccu.setBackground(new Color(255, 204, 204));
 		lblNccu.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNccu.setFont(new Font("ï¿½Lï¿½nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Font.BOLD, 36));
+		lblNccu.setFont(new Font("·L³n¥¿¶ÂÅé", Font.BOLD, 36));
 		lblNccu.setBounds(0, 68, 786, 90);
 		frame.getContentPane().add(lblNccu);
 		

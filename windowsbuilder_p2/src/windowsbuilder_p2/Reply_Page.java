@@ -53,6 +53,7 @@ public class Reply_Page {
 	 */
 	private void initialize() {
 		frame = new JFrame();
+		frame.setTitle("評論留言");
 		frame.setBounds(100, 100, 450, 323);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);

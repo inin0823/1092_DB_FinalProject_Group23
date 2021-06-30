@@ -88,7 +88,7 @@ public class fourm_page {
 	protected void initialize() {
 		frmFourm = new JFrame();
 		frmFourm.getContentPane().setBackground(new Color(255, 239, 213));
-		frmFourm.setTitle("Fourm");
+		frmFourm.setTitle("評論查看");
 		frmFourm.setBounds(100, 100, 523, 650);
 		frmFourm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmFourm.getContentPane().setLayout(null);
